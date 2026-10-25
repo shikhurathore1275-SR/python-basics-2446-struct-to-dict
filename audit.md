@@ -1,19 +1,18 @@
-README claim	Status	Evidence from factorial.py
-The project contains a program named factorial.py.	Supported	The provided code is intended to be saved as factorial.py. The filename itself cannot be verified from the code snippet alone.
-The program calculates the factorial of a number.	Supported	The loop multiplies the integers from 1 through n and stores the result in fact.
-The factorial of a non-negative integer is the product of positive integers up to that number.	Supported	The loop for i in range(1, n + 1) multiplies all integers from 1 to 5 for the given value of n.
-The factorial of 0 is 1.	Supported	If n = 0, the loop does not execute and fact remains 1.
-Calculates the factorial of a number.	Supported	fact = fact * i calculates the product, and print() displays the result.
-Demonstrates basic Python programming concepts.	Supported	The code uses a variable, a for loop, range(), multiplication, and print().
-Beginner-friendly program.	Supported	The code uses a straightforward loop and simple variables.
+README Claim	Status	Evidence from Code
+The project demonstrates structure-to-dictionary conversion.	Not Supported	The code creates a Python dictionary directly; it does not convert a structure into a dictionary.
+Demonstrates basic programming concepts.	Supported	It uses a dictionary, key-value pairs, and print() statements.
+Demonstrates data representation in Python.	Supported	The dictionary stores a student's name, roll number, and marks.
+Suitable for beginners.	Supported	The code uses basic dictionary operations and print statements.
+Requires Python 3.x.	Supported	The code uses standard Python syntax compatible with Python 3.
+Can be run using python struct-to-dict.py.	Not Supported	The code itself does not confirm the filename or repository setup. The command works only if the code is saved under that filename and Python is installed.
+The program may display instructions to the user.	Not Supported	The code contains no input prompts or instructions; it only prints student details.
+Example input and output depend on implementation.	Supported	The code has fixed dictionary values and prints their corresponding details without asking for input.
+No license information has been provided.	Not Supported	The code does not contain license information, but the repository would need to be checked to verify whether a license exists.
 
-Run python factorial.py to execute the program.	Supported, with a condition	This is a standard way to run a Python script, assuming Python is installed and the file is saved as factorial.py.
-Follow the program's instructions to calculate a factorial, if prompted.	Not Supported	The code does not request user input. It uses the predefined value n = 5.
+Expected output
+Name: Rahul
+Roll: 101
+Marks: 87.5
 
 
-Final audit conclusion
-Most of the README accurately describes the factorial calculation. However, three details need attention:
-1. Usage: The current program does not ask the user for input; it calculates the factorial of the fixed value n = 5.
-2. Example output: Change the example to match the actual output:
-   Factorial of 5 = 120
-3. License: Check the repository before claiming that no license has been specified.
+Main finding: The code demonstrates creating and accessing a dictionary, not converting a structure into one. The README's main project description should be corrected after the audit.
